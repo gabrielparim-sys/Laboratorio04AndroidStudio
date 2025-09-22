@@ -17,7 +17,7 @@ fun AddMovieFAB(onClick: () -> Unit) {
     ) {
         Icon(
             imageVector = Icons.Filled.Add,
-            contentDescription = "Agregar película (Editado por A)" // cambio A
+            contentDescription = "Agregar película"
         )
     }
 }
