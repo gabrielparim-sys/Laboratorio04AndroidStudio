@@ -9,8 +9,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun MovieList(movies: List<String>) {
-    LazyColumn(modifier = Modifier.padding(16.dp)) {
+fun MovieList(
+    movies: List<String>,
+    modifier: Modifier = Modifier // ✅ ahora acepta un modifier externo
+) {
+    LazyColumn(
+        modifier = modifier.padding(16.dp) // ✅ aplica el innerPadding + 16dp extra
+    ) {
         items(movies) { movie ->
             Text(text = movie)
         }
